@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: #003cff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+.project {
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #0c0909;
+}
+.project img {
+    max-width: 30%;  /* Limite la largeur à 100% du conteneur */
+    height:  auto    /* Garde les proportions */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #483cf0, #1d1d1d);
+}
+
+section {
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(185, 184, 184, 0.1);
+    background-color: #cecece00; /* Ajoute une couleur de fond pour les sections */
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #0715da; /* Change la couleur au survol */
+}
+
+button:hover {
+    background-color: #2c2b2b; /* Change la couleur au survol */
+    color: rgb(20, 19, 19);
+}
+
+a, button {
+    transition: all 0.3s ease;
+}
+
+header {
+    background-image: url('images/header-bg.jpg');
+    background-size: cover;
+    color: rgb(255, 255, 255);
+}
+
+body {
+    background-image: url('https://www.campus-des-ecoles.fr/uploads/2023/01/cybersecurite-10-min-scaled.jpg');
+    background-size: cover; /* Ajuste l'image pour couvrir tout l'écran */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Évite la répétition de l'image */
+    background-attachment: scroll; /* Rend l'arrière-plan fixe lors du défilement */
+    color: #ffffff; /* Texte en blanc pour un contraste avec l'arrière-plan */
+    font-family: 'Roboto', sans-serif;
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Couche noire transparente */
+    z-index: -1; /* Place la couche derrière le contenu */
+}
+.cyber-header {
+    position: relative;
+    height: 50vh; /* Hauteur de 50% de la fenêtre */
+    background-image: url('https://www.campus-des-ecoles.fr/uploads/2023/01/cybersecurite-10-min-scaled.jpg'); /* Chemin de votre image */
+    background-size: cover; /* Adapte l'image à l'espace */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Empêche la répétition */
+    display: flex;
+    justify-content: center; /* Centre horizontalement le contenu */
+    align-items: center; /* Centre verticalement le contenu */
+    color: white; /* Texte en blanc */
+    text-align: center;
+}
+
+.cyber-header .overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+    padding: 20px;
+    border-radius: 10px; /* Coins arrondis */
+}
+
+.cyber-header h1 {
+    font-size: 2.5rem; /* Taille du titre */
+    margin: 0;
+}
+
+.cyber-header p {
+    font-size: 1.2rem; /* Taille du paragraphe */
+    margin-top: 10px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Assure que le contenu prend au moins la hauteur de la fenêtre */
+    margin: 0; /* Supprime les marges par défaut */
+}
+
+main {
+    flex: 1; /* Fait en sorte que le contenu principal occupe l'espace disponible */
+}
+
+footer {
+    text-align: center; /* Centrer le texte dans le footer */
+    color: #ffffff; /* Couleur du texte */
+    padding: 20px 0; /* Espacement en haut et en bas */
+    position: relative; /* Laisse le footer suivre le flux normal de la page */
+}
+#e4-projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: #080808;
+    border: 1px solid #0300aa;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    padding: 15px;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.project-card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.project-card p {
+    font-size: 0.9em;
+    color: #ffffff;
+}
+.project-link {
+    text-decoration: none;  /* Supprime le soulignement par défaut des liens */
+    color: inherit;  /* Hérite de la couleur du texte de la carte */
+}
+
+.project-link:hover {
+    opacity: 0.8;  /* Ajoute un effet de survol */
+}

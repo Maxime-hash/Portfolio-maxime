@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets E5 - Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Projets E5</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="ags.html">Mon entreprise</a></li>
+                <li><a href="e4.html">E4</a></li>
+                <li><a href="e5.html">E5</a></li>
+                <li><a href="btssio.html">BTS SIO</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Mes projets E5</h2>
+        <p>Cette partie présente mes situations professionnelles ainsi que les documentations qui y sont associées.</p>
+        <div id="e5-projects"></div>
+    </main>
+</body>
+</html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentations Techniques - Projets E5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+</body>
+</html>
+<section id="E4">
+    <div id="e4-projects">
+        <div class="project-card">
+            <a href="" target="_blank">
+                <img src="c:\Users\Maxime\Desktop\Missions professionnelles - E4-E5\E5\téléchargé.png" alt="Projet 1" class="project-image">
+                <h3>Fiche Descriptive<h3>
+                <p>Fiche descriptive de la situation professionnelle réalisée sur Debian.</p>
+            </a>
+        </div>
+        <div class="project-card">
+            <a href="Projets E5\Documentation technique.pdf" target="_blank">
+                <img src="c:\Users\Maxime\Desktop\Missions professionnelles - E4-E5\E5\téléchargé.png" alt="Projet 2" class="project-image">
+                <h3>Documentation Technique</h3>
+                <p>Documentation Technique de la situation professionnelle réalisée sur Debian.</p>
+            </a>
+        </div>
+        <div class="project-card">
+            <a href="Projets E5\Documentation utilisateur.pdf" target="_blank">
+                <img src="c:\Users\Maxime\Desktop\Missions professionnelles - E4-E5\E5\téléchargé.png" alt="Projet 3" class="project-image">
+                <h3>Documentation Utilisateur</h3>
+                <p>Documentation utilisateur de la situation professionnelle réalisée sur Debian.</p>
+            </a>
+        </div>
+        <div class="project-card">
+            <a href="Projets E5\Documentation test.pdf" target="_blank">
+                <img src="c:\Users\Maxime\Desktop\Missions professionnelles - E4-E5\E5\téléchargé.png" alt="Projet 3" class="project-image">
+                <h3>Documentation Test</h3>
+                <p>Documentation test de la situation professionnelle réalisée sur Debian.</p>
+            </a>
+        </div>
+        <div class="project-card">
+            <a href="" target="_blank">
+                <img src="c:\Users\Maxime\Desktop\Missions professionnelles - E4-E5\E5\Windows-Server-art-1-680x380.webp" alt="Projet 3" class="project-image">
+                <h3>Fiche Descriptive</h3>
+                <p>Fiche descriptive de la situation professionnelle réalisée sur Windows Server.</p>
+            </a>
+        </div>
+        <div class="project-card">
+            <a href="Projets E5\Documentation technique Win.pdf" target="_blank">
+                <img src="c:\Users\Maxime\Desktop\Missions professionnelles - E4-E5\E5\Windows-Server-art-1-680x380.webp" alt="Projet 3" class="project-image">
+                <h3>Documentation Technique</h3>
+                <p>Documentation technique de la situation professionnelle réalisée sur Windows Server.</p>
+            </a>
+        </div>
+        <div class="project-card">
+            <a href="Projets E5\Documentation utilisateur Win.pdf" target="_blank">
+                <img src="c:\Users\Maxime\Desktop\Missions professionnelles - E4-E5\E5\Windows-Server-art-1-680x380.webp" alt="Projet 3" class="project-image">
+                <h3>Documentation Utilisateur</h3>
+                <p>Documentation utilisateur de la situation professionnelle réalisée sur Windows Server.</p>
+            </a>
+        </div>
+        <div class="project-card">
+            <a href="Projets E5\Documentation test Win.pdf" target="_blank">
+                <img src="c:\Users\Maxime\Desktop\Missions professionnelles - E4-E5\E5\Windows-Server-art-1-680x380.webp" alt="Projet 3" class="project-image">
+                <h3>Documentation Test</h3>
+                <p>Documentation test de la situation professionnelle réalisée sur Windows Server.</p>
+            </a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Maxime Laville</p>
+    </footer>
+</section>
+<script>
+    const projectsContainer = document.getElementById("e4-projects");
+
+    if (projectsContainer) {
+        projects.forEach((project) => {
+            const projectCard = document.createElement("div");
+            projectCard.classList.add("project-card");
+
+              // Créez un lien autour de chaque carte de projet
+    const projectLink = document.createElement("a");
+    projectLink.href = project.link;  // Ajoute le lien vers la page du projet
+    projectLink.classList.add("project-link"); // Ajoute une classe pour styliser le lien
+
+
+            projectCard.innerHTML = `
+                <img src="${project.image}" alt="${project.title}" class="project-image">
+                <h3>${project.title}</h3>
+                <p>${project.description}</p>
+            `;
+
+            projectsContainer.appendChild(projectCard);
+        });
+    } else {
+        console.error("Element #e4-projects not found in the HTML.");
+    }
+</script>
