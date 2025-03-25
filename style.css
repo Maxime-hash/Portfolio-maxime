@@ -91,7 +91,7 @@ body {
 }
 body::before {
     content: '';
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -184,4 +184,28 @@ footer {
 
 .project-link:hover {
     opacity: 0.8;  /* Ajoute un effet de survol */
+}
+.windows-server-section {
+    clear: both;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+}
+.debian-section {
+    clear: both;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
 }
